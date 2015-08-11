@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1BFCAE3-E41D-4058-9ED4-FCEA0B156052}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GooddogsCDN</RootNamespace>
+    <AssemblyName>GooddogsCDN</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Components\movie-info\movie-info.html" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="lib\iron-a11y-keys-behavior\index.html" />
+    <Content Include="lib\iron-a11y-keys-behavior\iron-a11y-keys-behavior.html" />
+    <Content Include="lib\iron-ajax\hero.svg" />
+    <Content Include="lib\iron-ajax\index.html" />
+    <Content Include="lib\iron-ajax\iron-ajax.html" />
+    <Content Include="lib\iron-ajax\iron-request.html" />
+    <Content Include="lib\iron-behaviors\index.html" />
+    <Content Include="lib\iron-behaviors\iron-button-state.html" />
+    <Content Include="lib\iron-behaviors\iron-control-state.html" />
+    <Content Include="lib\paper-behaviors\index.html" />
+    <Content Include="lib\paper-behaviors\paper-button-behavior.html" />
+    <Content Include="lib\paper-behaviors\paper-inky-focus-behavior.html" />
+    <Content Include="lib\paper-button\index.html" />
+    <Content Include="lib\paper-button\paper-button.html" />
+    <Content Include="lib\paper-material\index.html" />
+    <Content Include="lib\paper-material\paper-material.html" />
+    <Content Include="lib\paper-ripple\hero.svg" />
+    <Content Include="lib\paper-ripple\index.html" />
+    <Content Include="lib\paper-ripple\paper-ripple.html" />
+    <Content Include="lib\paper-styles\classes\global.html" />
+    <Content Include="lib\paper-styles\classes\shadow-layout.html" />
+    <Content Include="lib\paper-styles\classes\shadow.html" />
+    <Content Include="lib\paper-styles\classes\typography.html" />
+    <Content Include="lib\paper-styles\color.html" />
+    <Content Include="lib\paper-styles\default-theme.html" />
+    <Content Include="lib\paper-styles\demo-pages.html" />
+    <Content Include="lib\paper-styles\demo.css" />
+    <Content Include="lib\paper-styles\paper-styles-classes.html" />
+    <Content Include="lib\paper-styles\paper-styles.html" />
+    <Content Include="lib\paper-styles\shadow.html" />
+    <Content Include="lib\paper-styles\typography.html" />
+    <Content Include="lib\polymer\LICENSE.txt" />
+    <Content Include="lib\polymer\polymer-micro.html" />
+    <Content Include="lib\polymer\polymer-mini.html" />
+    <Content Include="lib\polymer\polymer.html" />
+    <Content Include="lib\promise-polyfill\Gruntfile.js" />
+    <Content Include="lib\promise-polyfill\promise-polyfill-lite.html" />
+    <Content Include="lib\promise-polyfill\promise-polyfill.html" />
+    <Content Include="lib\promise-polyfill\Promise-Statics.js" />
+    <Content Include="lib\promise-polyfill\Promise.js" />
+    <Content Include="lib\promise-polyfill\Promise.min.js" />
+    <Content Include="lib\webcomponentsjs\CustomElements.js" />
+    <Content Include="lib\webcomponentsjs\CustomElements.min.js" />
+    <Content Include="lib\webcomponentsjs\HTMLImports.js" />
+    <Content Include="lib\webcomponentsjs\HTMLImports.min.js" />
+    <Content Include="lib\webcomponentsjs\MutationObserver.js" />
+    <Content Include="lib\webcomponentsjs\MutationObserver.min.js" />
+    <Content Include="lib\webcomponentsjs\ShadowDOM.js" />
+    <Content Include="lib\webcomponentsjs\ShadowDOM.min.js" />
+    <Content Include="lib\webcomponentsjs\webcomponents-lite.js" />
+    <Content Include="lib\webcomponentsjs\webcomponents-lite.min.js" />
+    <Content Include="lib\webcomponentsjs\webcomponents.js" />
+    <Content Include="lib\webcomponentsjs\webcomponents.min.js" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="lib\polymer\.bower.json" />
+    <Content Include="lib\polymer\bower.json" />
+    <Content Include="lib\polymer\build.log" />
+    <Content Include="lib\iron-ajax\.bower.json" />
+    <Content Include="lib\iron-ajax\.gitignore" />
+    <Content Include="lib\iron-ajax\bower.json" />
+    <Content Include="lib\iron-ajax\README.md" />
+    <Content Include="lib\paper-button\.bower.json" />
+    <Content Include="lib\paper-button\.gitignore" />
+    <Content Include="lib\paper-button\bower.json" />
+    <Content Include="lib\paper-button\README.md" />
+    <Content Include="lib\paper-behaviors\.bower.json" />
+    <Content Include="lib\paper-behaviors\.gitignore" />
+    <Content Include="lib\paper-behaviors\bower.json" />
+    <Content Include="lib\paper-behaviors\README.md" />
+    <Content Include="lib\paper-material\.bower.json" />
+    <Content Include="lib\paper-material\.gitignore" />
+    <Content Include="lib\paper-material\bower.json" />
+    <Content Include="lib\paper-material\README.md" />
+    <Content Include="lib\paper-ripple\.bower.json" />
+    <Content Include="lib\paper-ripple\.gitignore" />
+    <Content Include="lib\paper-ripple\bower.json" />
+    <Content Include="lib\paper-ripple\README.md" />
+    <Content Include="lib\webcomponentsjs\.bower.json" />
+    <Content Include="lib\webcomponentsjs\bower.json" />
+    <Content Include="lib\webcomponentsjs\build.log" />
+    <Content Include="lib\webcomponentsjs\package.json" />
+    <Content Include="lib\webcomponentsjs\README.md" />
+    <Content Include="lib\promise-polyfill\.bower.json" />
+    <Content Include="lib\promise-polyfill\bower.json" />
+    <Content Include="lib\promise-polyfill\LICENSE" />
+    <Content Include="lib\promise-polyfill\package.json" />
+    <Content Include="lib\promise-polyfill\README.md" />
+    <Content Include="lib\paper-styles\.bower.json" />
+    <Content Include="lib\paper-styles\bower.json" />
+    <Content Include="lib\paper-styles\README.md" />
+    <Content Include="lib\iron-behaviors\.bower.json" />
+    <Content Include="lib\iron-behaviors\.gitignore" />
+    <Content Include="lib\iron-behaviors\bower.json" />
+    <Content Include="lib\iron-behaviors\README.md" />
+    <Content Include="lib\iron-a11y-keys-behavior\.bower.json" />
+    <Content Include="lib\iron-a11y-keys-behavior\.gitignore" />
+    <Content Include="lib\iron-a11y-keys-behavior\bower.json" />
+    <Content Include="lib\iron-a11y-keys-behavior\README.md" />
+    <None Include="Properties\PublishProfiles\gooddogs-cdn - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\gooddogs-cdn - Web Deploy.pubxml" />
+    <Content Include="Scripts\build.log" />
+    <Content Include="Scripts\bower.json" />
+    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Components\hello-world\hello-world.html" />
+    <Content Include="Index.html" />
+    <Content Include="test.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57727</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57727/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
